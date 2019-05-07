@@ -1,0 +1,228 @@
+ 
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-button {
+  width: 40px;
+  height: 40px;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 100px none #e50000;
+  border-radius: 49px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #242424;
+  border: 0px none #e50000;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #262626;
+}
+::-webkit-scrollbar-track:active {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.container{
+	display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+}
+
+.menuContainer{
+	display: grid;
+    grid-template-rows: 2fr 4fr;
+}
+.workSpaceContainer{
+	display: grid;
+}
+
+div{
+	border: 1px solid black;
+	padding: 0px;
+	overflow: auto; 
+}
+
+
+
+
+body {
+    background: #f7f7f7;
+  }
+
+
+  button.button {
+    display: block;
+    float: left;
+    position: relative;
+    height: 5%;
+    width: 25%;
+    margin: 0 0 0 0;
+    
+    text-decoration: none;
+    font: 12px "Qardoos", sans-serif;
+    font-weight: bold;
+    line-height: 350%;
+    text-align: center;
+    
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  button.button:before,
+  button.button:after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    height: 99%;
+    width: 100%;
+    bottom: -1px;
+    
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  button.button:before { 
+    height: 23px;
+    bottom: -4px;
+    border-top: 0;
+    
+    -webkit-border-radius: 0 0 3px 3px; 
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    
+    -webkit-box-shadow: 0 1px 1px 0px #bfbfbf;
+    -moz-box-shadow: 0 1px 1px 0px #bfbfbf;
+    box-shadow: 0 1px 1px 0px #bfbfbf;
+  }
+
+  /* BLACK */
+button.black,
+  button.black:hover,
+  button.black:visited {
+    color: #fff;
+    border-bottom: 4px solid #414141;
+    text-shadow: 0px 1px 0px #2f2f2f;
+    
+    background: #656565;
+    background: -webkit-gradient(linear, left top, left bottom, from(#656565), to(#444));
+    background: -moz-linear-gradient(top,  #656565,  #444);
+    
+    box-shadow: inset 1px 1px 0 #939393;
+  }
+
+  .black:before,
+  .black:after {
+    border: 1px solid #535353;
+    border-bottom: 1px solid #343434;
+  }
+
+  .black:after { border: 1px solid #5a5a5a; }
+
+  button.black:hover {
+    background: #444;
+    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#656565));
+    background: -moz-linear-gradient(top,  #444,  #656565);
+  }
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+.btn-group{
+	display: table;
+	align-content: center;
+	width: 79%;
+	position: absolute;
+	bottom: 0;
+}
+
+
+/*menu*/
+
+@font-face {
+	font-family: "Qardoos"; 
+	src: url("Qardoos.otf") format("opentype"); 
+}
+
+.mymenu{
+	height: 100%
+	background: #707070;
+}
+
+.el{
+	align-content: center;
+	font-family: "Qardoos";
+	color:red;
+	font-weight: bold;
+	background-color: black;
+}
+.metro {
+  font-weight: bold;
+  list-style: none;
+  padding: 0;
+  margin: 20 0 0 10px;
+  border-left: 7px solid #000000;
+}
+.metro li {line-height: 2em;}
+.metro ul {
+  margin: 20px 0 20px 15px;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+.metro ul:before, .metro ul:after {
+  content: "";
+  width: 5px;
+  height: 28px;
+  background: #000000;
+  position: relative;
+  display: block;
+  left: -9px;
+}
+.metro ul:before {
+  transform: rotate(-45deg);
+  margin-top: -15px;
+}
+.metro ul:after {
+  transform: rotate(45deg);
+  bottom: -20px;
+}
+.metro ul li {border-left: 5px solid #000000;}
+.metro ul li:first-child {
+  margin-top: -5px;
+  padding-top: 5px;
+}
+.metro ul li:last-child {
+  padding-bottom: 9px;
+  margin-bottom: -25px;
+}
+.metro a {
+  text-decoration: none;
+  display: block;
+  font-family: 'Qardoos', sans-serif;
+  color: #000000;
+}
+.metro a:before {
+  content: "";
+  display: inline-block;
+  background: red;
+  width: 12px;
+  height: 12px;
+  left: -9px;
+  position: relative;
+  border-radius: 50%;
+  margin-right: .5em;
+}
